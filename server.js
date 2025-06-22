@@ -22,7 +22,7 @@ app.post('/api/contact', async (req, res) => {
   const msg = {
     to: "tdp.beach@gmail.com",
     from: "julienbernard.dev@gmaill.com", // DOIT être un email vérifié sur SendGrid
-    subject: `Message de ${name}`,
+    subject: `Message de ${lastName} ${firstName}`,
     text: `Nom: ${lastName}\nPrénom: ${firstName}\nEntreprise: ${company}\nTéléphone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
   };
 
